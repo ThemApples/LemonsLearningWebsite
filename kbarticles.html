@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB0010428: How to Connect to Global VPN Securely - ServiceNow</title>
+    <!-- Google Fonts for clean ServiceNow typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for standard enterprise icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ServiceNow Header Bar -->
+    <header>
+        <div class="header-left">
+            <div class="header-logo">
+                <i class="fa-solid fa-cube"></i> ServiceNow <span style="font-weight: 400; font-size: 13px; margin-left: 8px; opacity: 0.8;">| Employee Center</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="user-profile">
+                <i class="fa-solid fa-circle-user" style="font-size: 18px;"></i>
+                <span>Alex Morgan</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secondary Navigation Bar (Portal Tabs) -->
+    <nav class="portal-nav">
+        <ul>
+            <li><a href="index.html" ><i class="fa-solid fa-house" style="margin-right: 6px;"></i> Home</a></li>
+            <li><a href="#" class = "active"><i class="fa-solid fa-book-open" style="margin-right: 6px;"></i> Knowledge Base</a></li>
+            <li><a href="#"><i class="fa-solid fa-ticket" style="margin-right: 6px;"></i> My Tickets</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <div class="main-container">
+        
+        <!-- Left Column: Article Content -->
+        <main class="article-card">
+            <div class="article-header">
+                <div class="kb-number">KB0010428</div>
+                <h1 class="article-title">Knowledge Articles</h1>
+            </div>
+
+            <div class="article-body">
+                <h2>Overview</h2>
+                <p>This article provides step-by-step instructions on how to connect to the corporate Global VPN network securely using your multi-factor authentication (MFA) credentials. This is required for all remote employees and contractors accessing internal resources.</p>
+
+                <h2>Prerequisites</h2>
+                <ul>
+                    <li>An active corporate network account.</li>
+                    <li>Global Protect VPN Client installed on your machine.</li>
+                    <li>Your mobile device configured with the Authenticator app for MFA.</li>
+                </ul>
+
+                <h2>Connection Steps</h2>
+                <ol>
+                    <li>Open the <strong>Global Protect Client</strong> from your system tray (Windows) or menu bar (macOS).</li>
+                    <li>Enter the portal address: <code>vpn.enterprise-secure.com</code> and click <strong>Connect</strong>.</li>
+                    <li>When prompted, input your standard corporate username and password.</li>
+                    <li>Complete the MFA prompt sent to your mobile authenticator app.</li>
+                </ol>
+
+                <div class="sn-callout">
+                    <i class="fa-solid fa-circle-info" style="color: var(--sn-blue); margin-right: 6px;"></i>
+                    <strong>Note:</strong> If you experience authentication lockouts after three incorrect attempts, please contact the IT Service Desk.
+                </div>
+
+                <h2>Troubleshooting</h2>
+                <p>If you encounter error code <em>Connection Timed Out</em>, verify that your local internet connection is working and that you are not running a conflicting third-party personal VPN service.</p>
+            </div>
+        </main>
+
+        <!-- Right Column: Meta Metadata & Actions -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-title">Article Details</div>
+                <ul class="meta-list">
+                    <li class="meta-item">
+                        <span class="meta-label">Status</span>
+                        <span class="badge-published">Published</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">KB Category</span>
+                        <span class="meta-value">IT Infrastructure / Security</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Author</span>
+                        <span class="meta-value">Network Operations Team</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Last Modified</span>
+                        <span class="meta-value">October 24, 2026</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Views</span>
+                        <span class="meta-value">1,429</span>
+                    </li>
+                </ul>
+                <button class="btn-primary-sn"><i class="fa-solid fa-bookmark" style="margin-right: 6px;"></i> Bookmark Article</button>
+            </div>
+
+            <div class="sidebar-card feedback-box">
+                <div class="sidebar-title" style="margin-bottom: 12px;">Article Feedback</div>
+                <p class="feedback-question">Was this article helpful?</p>
+                <div class="feedback-buttons">
+                    <button class="btn-sn"><i class="fa-solid fa-thumbs-up" style="color: var(--sn-success);"></i> Yes</button>
+                    <button class="btn-sn"><i class="fa-solid fa-thumbs-down" style="color: #D9381E;"></i> No</button>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+</body>
+</html>
