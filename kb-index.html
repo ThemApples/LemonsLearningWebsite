@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base - Article Directory</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for clean ServiceNow typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for standard enterprise icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="logo"><i class="fa-solid fa-lemon"></i> LemonNow <span style="font-weight: 400; font-size: 13px; margin-left: 8px; opacity: 0.8;"> </span></div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+      <!-- Sidebar Navigation -->
+<aside class="sidebar">
+    <div class="sidebar-section">
+        <!-- Replaced the list with a standalone stylized back button link -->
+        <a href="index.html" class="back-button">
+            <span class="arrow">←</span> Back to Main Docs
+        </a>
+    </div>
+</aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <article>
+                <div class="breadcrumbs"></div>
+                
+                <h1>Knowledge Base Article Index</h1>
+                <p class="meta">Comprehensive list of system logs, patches, and historical articles.</p>
+                
+                <p>Use the database tracker below to locate specific resolution documents, patch notes, or configuration references by their tracking code.</p>
+
+                <!-- KB Directory List -->
+                <ul class="kb-list" id="kb-directory">
+                    <li class="kb-item">
+                        <div class="kb-meta-group">
+                            <span class="kb-number">KB-40291</span>
+                            <a href="#" class="kb-title">Resolving Node.js version conflict warnings during npm install</a>
+                        </div>
+                        <span class="badge kb-badge badge-core">Core Platform</span>
+                    </li>
+
+                    <li class="kb-item">
+                        <div class="kb-meta-group">
+                            <span class="kb-number">KB-88104</span>
+                            <a href="#" class="kb-title">Updating Git authentication tokens for secure downstream deployments</a>
+                        </div>
+                        <span class="badge kb-badge badge-config">Configuration</span>
+                    </li>
+
+                    <li class="kb-item">
+                        <div class="kb-meta-group">
+                            <span class="kb-number">KB-11942</span>
+                            <a href="#" class="kb-title">Fixing Hot-Module Reloading (HMR) failures behind a proxy network</a>
+                        </div>
+                        <span class="badge kb-badge badge-fix">Troubleshooting</span>
+                    </li>
+
+                    <li class="kb-item">
+                        <div class="kb-meta-group">
+                            <span class="kb-number">KB-65520</span>
+                            <a href="#" class="kb-title">Allocating continuous system memory flags for heavy local builds</a>
+                        </div>
+                        <span class="badge kb-badge badge-core">Core Platform</span>
+                    </li>
+
+                    <li class="kb-item">
+                        <div class="kb-meta-group">
+                            <span class="kb-number">KB-30491</span>
+                            <a href="#" class="kb-title">Overriding default hosting ports via CLI environment flags</a>
+                        </div>
+                        <span class="badge kb-badge badge-config">Configuration</span>
+                    </li>
+
+                    <li class="kb-item">
+                        <div class="kb-meta-group">
+                            <span class="kb-number">KB-77183</span>
+                            <a href="#" class="kb-title">Debugging GitHub Actions pipeline workflow validation runtime errors</a>
+                        </div>
+                        <span class="badge kb-badge badge-fix">Troubleshooting</span>
+                    </li>
+                    
+                    <li class="kb-item">
+                        <div class="kb-meta-group">
+                            <span class="kb-number">KB-77183</span>
+                            <a href="#" class="kb-title">Debugging GitHub Actions pipeline workflow validation runtime errors</a>
+                        </div>
+                        <span class="badge kb-badge badge-fix">Troubleshooting</span>
+                    </li>
+                    
+                </ul>
+
+            </article>
+        </main>
+    </div>
+
+    <!-- Live Client-side Filtering Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('search-input');
+            const kbItems = document.querySelectorAll('.kb-item');
+
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase().trim();
+
+                kbItems.forEach(item => {
+                    const textContent = item.textContent.toLowerCase();
+                    
+                    if (textContent.includes(searchTerm)) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
