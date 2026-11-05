@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Google Fonts for clean ServiceNow typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for standard enterprise icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ServiceNow Header Bar -->
+    <header>
+        <div class="header-left">
+            <div class="header-logo">
+                <i class="fa-solid fa-lemon"></i> LemonNow <span style="font-weight: 400; font-size: 13px; margin-left: 8px; opacity: 0.8;">| Guest Center</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="user-profile">
+                <i class="fa-solid fa-circle-user" style="font-size: 18px;"></i>
+                <span>Guest</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secondary Navigation Bar (Portal Tabs) -->
+    <nav class="portal-nav">
+        <ul>
+            <li><a href="index.html" class = "active"><i class="fa-solid fa-file-lines" style="margin-right: 6px;"></i> Knowledge Article</a></li>
+            <li><a href="kb-index.html"><i class="fa-solid fa-book-open" style="margin-right: 6px;"></i> Knowledge Base</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <div class="main-container">
+        
+        <!-- Left Column: Article Content -->
+        <main class="article-card">
+            <div class="article-header">
+                <div class="kb-number">KB0000000</div>
+                <h1 class="article-title">Welcome</h1>
+            </div>
+
+            <div class="article-body">
+                <h2>Overview</h2>
+                <p>This article provides step-by-step instructions on how to navigate and utilize our ServiceNow look-alike technical documentation portal to remove environment roadblocks. From absolute initial local configuration sequences to continuous downstream cloud integration pipelines, this centralized knowledge base is required for all developers, engineers, and IT staff seeking to turn architectural legacy lemons into seamless, scalable lemonade.</p>
+
+                <h2>Prerequisites</h2>
+                <ul>
+                    <li>An internet connection</li>
+                    <li>This pages URL</li>
+                    <li>Your mobile device configured with the Authenticator app for MFA.</li>
+                </ul>
+
+                <h2>How to use</h2>
+                <ol>
+                    <li><strong>Locate the Navigation Bar:</strong> Look at the primary toolbar running horizontally across the top of your portal interface.</li>
+                    <li><strong>Find the Knowledge Base Icon or Link:</strong> Look for a button explicitly labeled "Knowledge Base" and pressed on it</li>
+                    <li><strong>Click the Button:</strong> Click directly on the item to open the central repository for technical documentation, local setup guides, and troubleshooting runbooks.</li>
+                </ol>
+        </main>
+
+        <!-- Right Column: Meta Metadata & Actions -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-title">Article Details</div>
+                <ul class="meta-list">
+                    <li class="meta-item">
+                        <span class="meta-label">Status</span>
+                        <span class="badge-published">Published</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">KB Category</span>
+                        <span class="meta-value">IT Staff</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Author</span>
+                        <span class="meta-value">Owner</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Last Modified</span>
+                        <span class="meta-value">11th November, 2026</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Views</span>
+                        <span class="meta-value">0001</span>
+                    </li>
+                </ul>
+                <button class="btn-primary-sn"><i class="fa-solid fa-bookmark" style="margin-right: 6px;"></i> Bookmark Article</button>
+            </div>
+
+           
+            </div>
+        </aside>
+
+    </div>
+
+</body>
+</html>
