@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB0003</title>
+    <!-- Google Fonts for clean ServiceNow typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for standard enterprise icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ServiceNow Header Bar -->
+    <header>
+        <div class="header-left">
+            <div class="header-logo">
+                <i class="fa-solid fa-lemon"></i> LemonNow <span style="font-weight: 400; font-size: 13px; margin-left: 8px; opacity: 0.8;">| Guest Center</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="user-profile">
+                <i class="fa-solid fa-circle-user" style="font-size: 18px;"></i>
+                <span>Guest</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secondary Navigation Bar (Portal Tabs) -->
+    <nav class="portal-nav">
+        <ul>
+            <li><a href="index.html" class = "active"><i class="fa-solid fa-file-lines" style="margin-right: 6px;"></i> Knowledge Article</a></li>
+            <li><a href="kb-index.html"><i class="fa-solid fa-book-open" style="margin-right: 6px;"></i> Knowledge Base</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <div class="main-container">
+        
+        <!-- Left Column: Article Content -->
+        <main class="article-card">
+            <div class="article-header">
+                <div class="kb-number">KB0003</div>
+                <h1 class="article-title">Docking station troubles</h1>
+            </div>
+
+            <div class="article-body">
+                <h2>Overview</h2>
+                <p>This article provides step-by-step instructions on how to diagnose, isolate, and resolve docking station connectivity failures across standard workspace setups. From initial power and cable-seating checks to downstream display-driver and firmware reconciliations, this centralized troubleshooting reference is essential for employees, engineers, and IT support staff seeking to turn blank-screen desk setups into seamless, multi-monitor productivity.</p>
+
+                <h2>Prerequisites</h2>
+                <ul>
+                    <li>Laptop</li>
+                    <li>Internet Connection</li>
+                    <li>Docking Station</li>
+                    <li>Montior</li>
+                </ul>
+
+                <h2>What to check:</h2>
+                <ol>
+                    <li><strong>Verify rear cable seating and power indicator:</strong> Confirm that all cables—including the power brick and host cable—are plugged tightly into the back of the docking station, and check for a lit power indicator LED showing the dock is receiving power.</li>
+                    <li><strong>Verify monitor connections and power status:</strong> Confirm that the display cables from each monitor are plugged firmly into the docking station, and check that the power indicator light on each monitor's power button is illuminated.</li>
+                    <li><strong>Verify display detection and update graphics drivers:</strong> Once power and cable connections are confirmed, check your computer's display settings to verify that the external monitors are detected; if they do not appear, update the computer's display (graphics) drivers, then unplug the docking station from the laptop and plug it back in to re-establish the connection.</li>
+                    <li><strong>Perform a full power reset on the docking station:</strong> If the docking station is still not working, unplug the power cable and laptop connection from the dock, press and hold the dock's power button for 30 seconds to drain residual power, and then reconnect power and the laptop cable. (Note: Reset steps can vary by brand and model—if your dock lacks a power button or remains unresponsive, check the manufacturer's online support guide for your specific model's hard-reset procedure.)</li>
+                </ol>
+        </main>
+
+        <!-- Right Column: Meta Metadata & Actions -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="sidebar-title">Article Details</div>
+                <ul class="meta-list">
+                    <li class="meta-item">
+                        <span class="meta-label">Status</span>
+                        <span class="badge-published">Published</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">KB Category</span>
+                        <span class="meta-value">Everyone</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Author</span>
+                        <span class="meta-value">Owner</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Last Modified</span>
+                        <span class="meta-value">28th November, 2026</span>
+                    </li>
+                    <li class="meta-item">
+                        <span class="meta-label">Views</span>
+                        <span class="meta-value">0001</span>
+                    </li>
+                </ul>
+                
+            </div>
+
+           
+            </div>
+        </aside>
+
+    </div>
+
+</body>
+</html>
